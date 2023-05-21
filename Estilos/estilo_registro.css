@@ -1,0 +1,194 @@
+/*Estilos del cuerpo de la pagina*/
+#cuerpo{
+	background: #FFF1FB;
+  margin-top: 106px;
+  width: 100%;
+  height: 1060px;
+  position: absolute;
+  z-index: -1;
+}
+
+#Titulo{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  margin-left: 455px;
+  border-bottom: 1px solid #B2B2B2;
+  width: 490px;
+}
+
+fieldset{
+  border:1px solid #6bbfa7;
+  border-radius: 5px;
+  padding: 20px;
+  background: #FCDDD6;
+  margin-top: 20px;
+  margin-left: 470px;
+  width: 420px;
+}
+
+#espacio{
+  height: 10px;
+}
+
+td{
+  width: 80px;
+  padding-left: 28px;
+  float: left;
+  clear: left;
+  margin-bottom: 1px;
+  margin-left: 0px;
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+input[type=text], input[type=number]{
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 10px 50px 10px 10px;
+  font-family: Arial;
+  width: 300px;
+  text-align: left;
+  font-size: 15px;
+  float: left;
+}
+
+input[type=submit]{
+  margin-top: 20px;
+  margin-left: 90px;
+  padding: 1em 3em;
+  border-radius: 10px;
+  background: #FFF;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(255, 0, 178, 1);
+  transition: all 0.2s ease;
+}
+
+#boton_registrar{
+  text-align: center;
+}
+
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../Imagenes/defecto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 89px;
+}
+.prevPhoto label{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.prevPhoto img{
+  width: 100%;
+  height: 100%;
+}
+.upimg, .notBlock{
+  display: none !important;
+}
+.errorArchivo{
+  font-size: 16px;
+  font-family: arial;
+  color: #cc0000;
+  text-align: center;
+  font-weight: bold; 
+  margin-top: 10px;
+}
+.delPhoto{
+  color: #FFF;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: red;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 10;
+}
+#tbl_list_productos img{
+  width: 50px;
+}
+.imgProductoDelete{
+  width: 175px;
+}
+
+#content-select select{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+#content-select select::-ms-expand {
+    display: none;
+}
+
+#content-select{
+  max-width: 250px;
+  position: relative;
+}
+ 
+#content-select select{
+  display: inline-block;
+  width: 200px;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0; 
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #999;
+  font-family: 
+  'Quicksand', sans-serif;
+  border:2px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+ 
+#content-select select:hover{
+  background: #B1E8CD;
+}
+
+
+/*-----------------------------*/
+/*Estilos del pie de la pagina*/
+#pie{
+	background: #000;
+  margin-top: 1170px;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  z-index: -2;
+}

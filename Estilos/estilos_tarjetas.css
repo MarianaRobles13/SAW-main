@@ -1,0 +1,168 @@
+.body_target{
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    position: relative;
+    height: 570px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper {
+    width: 960px;
+}
+
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-content{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    border-radius: 20px;
+}
+
+section .card .imagen_tarjeta{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 0;
+    border: 2px solid rgb(158, 158, 158);
+}
+
+.card .text-titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.card .text-descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    height: 135px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card .text-moneda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    height: 20px;
+}
+
+.card .text-stock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    height: 20px;
+}
+
+.card .boton-detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.card .boton-detalles a{
+    background: #d087d1;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card .boton-borde{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card .boton-borde a{
+    background: #b642b8;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+}
+
+.card .boton-borde a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgb(112, 112, 112);
+    transition: all 0.2s ease;
+}
+
+.swiper-pagination{
+    position: absolute;
+}
+
+.swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #808080;
+}
+
+.swiper-button-next {
+    right: 10px;
+    left: auto;
+    color: #808080;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: #808080;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: #7d2ae8;
+}

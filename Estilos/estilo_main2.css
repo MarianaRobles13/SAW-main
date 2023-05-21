@@ -1,0 +1,1056 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+#loader {
+  position: absolute;
+  left: 54%;
+  top: 50%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #f82298;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+/*--------------------------------------- CABECERA ---------------------------------------*/
+/*======================== MENU ==========================*/
+#cabecera{
+  background-color: #FFF;
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+#cabecera a, button{
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+/*----------- Imagen de usuario y logo de la pasteleria -----------*/
+.imagen_1{
+  width: 60px;
+  height: 50px;
+}
+
+.imagen_2{
+  width: 60px;
+  height: 50px;
+  margin-right: 0px;
+}
+
+/*--------Header Responsive--------*/
+header {
+  background: #fff;
+  padding: 10px 15px;
+  color: #000;
+}
+header .img{
+  margin-top: -10px;
+  margin-bottom: -14px;
+}
+header .img_2{
+  margin-top: -8px;
+}
+header #navbarNavDropdown{
+  margin-top: 10px;
+  margin-left: 68px;
+}
+header nav .navbar-nav .nav-link {
+  color: #000 !important;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 18px !important;
+}
+header .navbar-brand {
+  max-width: 200px;
+}
+.cart-login {
+      position: absolute;
+      right: 3rem;
+      margin-top: 4px!important;
+      width: 8%!important;
+}
+header .btn{
+  background: #FFF;
+  border: none;
+}
+/*---------------------------------*/
+
+/*----------- Lista de menu -----------*/
+#cabecera a{
+  width: 100px;
+  background: #FFF;
+}
+
+#cabecera a{
+  text-align: left;
+  margin-right: 50px;
+  color:#000;   
+}
+
+#cabecera li a{
+  background: #FFF;
+  border-bottom: 3px solid #fff;
+  width: auto;
+  margin-top: 0;
+}
+
+#op_menu:hover{
+  color: rgb(87, 84, 90);
+  border-bottom: 3px solid #B421B6;
+  transition: all 2s;
+  width: auto;
+}
+
+/*----------- Lista de submenu -----------*/
+#cabecera li, ul, a{
+  background-color: #FFF;
+}
+
+.dropdown-menu.show {
+    padding-right: 21px;
+    width: 180px;
+}
+
+#list_menu ul li a:hover{
+  background: #f0f0f0;
+  padding-right: 103%;
+}
+
+/*----------- Ventana flotante de usuario -----------*/
+.ventana{
+  background: #fff;
+  width: 170px;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  min-height: 200px;
+  border: 1px solid black;
+  border-radius: 22px;
+  position: absolute;
+  float: right;
+  right: 16px;
+  top: 68px;
+  display: none;
+  z-index: 3;
+}
+
+#usuario{
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#close_img{
+  width: 25px;
+  height: 25px;
+  background: #fff;
+}
+
+#close{
+  position: absolute;
+  bottom: 2%;
+  left: 43%;
+}
+
+/*----------- Boton para iniciar sesion -----------*/
+#iniciar{
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  font: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#iniciar a{
+  background: #fff;
+  text-decoration: none;
+}
+
+#iniciar a:hover{
+  color: #494242;
+}
+
+/*----------- Boton para registrarse -----------*/
+#regist{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+  #regist a{
+    background: #fff;
+    text-decoration: none;
+  }
+  
+  #regist a:hover{
+    color: #494242;
+  }
+
+  /*----------------- Ventana de Login -----------------*/
+#login{
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #FFF;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  margin-left: 85px;
+}
+
+#login_usuario{
+  margin-top: 5.5%;
+  float: right;
+  clear: none;
+  position: fixed;
+  margin-left: 32%;
+  background: #CCC;
+  padding: 5px 15px;
+  border-radius: 1em;
+  border: 1px solid transparent;
+  font-family: Arial;
+  font-size: 100%;
+  font-weight: bold;
+  z-index: 2;
+  display: hidden;
+  transition: all 2s;
+}
+
+#regis_exito{
+  margin-top: 5.5%;
+  float: right;
+  clear: none;
+  position: fixed;
+  margin-left: 42%;
+  background: #CCC;
+  padding: 5px 15px;
+  border-radius: 1em;
+  border: 1px solid transparent;
+  font-family: Arial;
+  font-size: 100%;
+  font-weight: bold;
+  z-index: 2;
+  transition: all 2s;
+}
+
+/*--------------------------------------- CUERPO ---------------------------------------*/
+#cuerpo{
+	background: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  margin-bottom: 100px;
+}
+
+/*-------------- Formulario -------------*/
+#cuadro fieldset{
+  border:1px solid #6bbfa7;
+  border-radius: 5px;
+  padding: 20px;
+  background: #FCDDD6;
+  margin-top: 20px;
+  margin-left: 470px;
+  width: 420px;
+}
+
+#cuadro td{
+  width: 80px;
+  padding-left: 28px;
+  float: left;
+  clear: left;
+  margin-bottom: 1px;
+  margin-left: 0px;
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+input[type=text], input[type=number]{
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 10px 50px 10px 10px;
+  font-family: Arial;
+  width: 300px;
+  text-align: left;
+  font-size: 15px;
+  float: left;
+}
+
+input[type=submit]{
+  margin-top: 20px;
+  margin-left: 90px;
+  padding: 1em 3em;
+  border-radius: 10px;
+  background: #FFF;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgb(112, 112, 112);
+  transition: all 0.2s ease;
+}
+
+#boton_registrar{
+  text-align: center;
+}
+
+/*
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../Imagenes/defecto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 89px;
+}
+.prevPhoto label{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.prevPhoto img{
+  width: 100%;
+  height: 100%;
+}
+.upimg, .notBlock{
+  display: none !important;
+}
+.errorArchivo{
+  font-size: 16px;
+  font-family: arial;
+  color: #cc0000;
+  text-align: center;
+  font-weight: bold; 
+  margin-top: 10px;
+}
+.delPhoto{
+  color: #FFF;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: red;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 10;
+}
+#tbl_list_productos img{
+  width: 50px;
+}
+.imgProductoDelete{
+  width: 175px;
+}
+
+#content-select select{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#content-select select::-ms-expand {
+    display: none;
+}
+
+#content-select{
+  max-width: 250px;
+  position: relative;
+}
+ 
+#content-select select{
+  display: inline-block;
+  width: 200px;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0; 
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #999;
+  font-family: 
+  'Quicksand', sans-serif;
+  border:2px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+ 
+#content-select select:hover{
+  background: #B1E8CD;
+}
+*/
+
+/*-----Boton flotante para regresar al inicio de la pagina --------*/
+.arriba{
+  display:none;
+  font-size:40px;
+  cursor:pointer;
+  position: fixed;
+  bottom:70px;
+  right:20px;
+  z-index: 3;
+}
+
+.arriba:hover{
+  color: #b642b8;
+}
+
+
+/*==================SLIDER DE IMAGENES===================*/
+#imagenes_carrusel{
+  width: 100%;
+  height: auto;
+}
+/*==================FIN SLIDER DE IMAGENES===================*/
+
+
+/*----- Texto de destacados --------*/
+#cuerpo #destacado{
+  text-align: center;
+  margin-top: 4%;
+  font-size: 30px;
+  font-weight: bold;
+}
+/*----- Fin Texto de destacados -----*/
+
+
+/*----- Texto de pagina nosotros --------*/
+#cuerpo #nosotros{
+  text-align: center;
+  margin-top: 1.5%;
+}
+
+#cuerpo #nosotros h1{
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+#cuerpo #nosotros p{
+  text-align: justify;
+  margin: 0 6% 0 6%;
+  font-size: 19px;
+  color: #000;
+  padding: 1.5%;
+  border: 0.5px solid rgb(187, 185, 185);
+  border-radius: 20px;
+}
+
+#cuerpo #nosotros #ubicacion-horario{
+  display:inline-flex;
+  text-align: center;
+  margin-top: 2%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#cuerpo #nosotros #ubicacion{
+  width: 80%;
+  margin-right: 1%;
+  margin-left: 4%;
+}
+
+#cuerpo #nosotros iframe{
+  border-radius: 2%;
+}
+
+#cuerpo #nosotros #horario{
+  width: 80%;
+  margin-right: 4%;
+  margin-left: 1%;
+}
+
+#cuerpo #nosotros #tabla_nosotros{
+  border: 1px solid rgb(126, 125, 125);
+  border-radius: 20px;
+  text-align: center;
+}
+
+#cuerpo #nosotros #tabla_nosotros th{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(0, 0, 0); 
+  text-align: center;
+  border-bottom: 1px solid rgb(126, 125, 125);
+}
+
+#cuerpo #nosotros #tabla_nosotros td{
+  padding: 5px 10px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+/*----- Fin Texto de pagina nosotros -------*/
+
+/*--------- Pagina contactanos -------------*/
+#producto{
+  margin-top: 5.5%;
+  float: right;
+  clear: none;
+  position: fixed;
+  margin-left: 34.5%;
+  background: #CCC;
+  padding: 5px 15px;
+  border-radius: 1em;
+  border: 1px solid transparent;
+  font-family: Arial;
+  font-size: 100%;
+  font-weight: bold;
+  z-index: 2;
+  transition: all 2s;
+}
+
+#producto_error{
+  margin-top: 5.5%;
+  float: right;
+  clear: none;
+  position: fixed;
+  margin-left: 43%;
+  background: #CCC;
+  padding: 5px 15px;
+  border-radius: 1em;
+  border: 1px solid transparent;
+  font-family: Arial;
+  font-size: 100%;
+  font-weight: bold;
+  z-index: 2;
+  transition: all 2s;
+}
+/*--------- Fin pagina contactanos -------------*/
+
+/*--------------------------------------- PIE ---------------------------------------*/
+#pie, #footer{
+	background-color: rgb(229, 172, 231);
+  margin-bottom: -48px;
+}
+
+#pie #footer-right{
+  background-color:  rgb(229, 172, 231);
+  color: rgb(87, 86, 86);
+  margin-left: -35px;
+  margin-right: -35px;
+  padding-right: 80px;
+  margin-top: -17px;
+}
+
+#pie #footer-right h5{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px!important;
+  text-transform: none!important;
+}
+
+#pie #footer-right #box{
+  background-color:  rgb(229, 172, 231);
+  text-align: center;
+  line-height: 18px;
+}
+
+#pie #footer-right #box a{
+  background-color:rgb(229, 172, 231);
+  text-decoration: none;
+  color: rgb(87, 86, 86)!important;
+}
+
+#pie #footer-right p{
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(87, 86, 86);
+  margin-bottom: 5px;
+}
+
+#pie #footer-right #sociales a i{
+  font-size: 25px;
+}
+
+#pie #footer-right #sociales #facebook{
+  color: rgb(87, 86, 86);
+}
+
+#pie #footer-right #sociales #facebook:hover{
+  color: #271cc4;
+}
+
+#pie #footer-right #sociales #instagram{
+  color: rgb(87, 86, 86);
+}
+
+#pie #footer-right #sociales #instagram:hover{
+  color: #db40ad;
+}
+
+#pie #footer-right #sociales #whatsapp{
+  color: rgb(87, 86, 86);
+}
+
+#pie #footer-right #sociales #whatsapp:hover{
+  color: #02961b;
+}
+
+#pie #logo_imagen{
+  background: #fff;
+  width: 160px;
+  height: 151px;
+  margin-top: 25px;
+  padding: 1% 0;
+  border-radius: 50%;
+  border: 4px solid #b642b8;
+}
+
+#pie #spacelogo{
+  width: 150px;
+  height: 150px;
+}
+
+#pie #spacecolumna{
+  margin-top: -25px;
+}
+
+#pie #proteccion{
+  color: rgb(87, 86, 86)!important;
+  background-color: rgb(229, 172, 231)!important;
+  border-top: 1px solid #999;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------- Media Queries ------------------------------------*/
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+@media (max-width:1300px){
+  header #navbarNavDropdown{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:1200px){
+  .imagen_2{
+    margin-left: 90%;
+  }
+
+  .ventana{
+    right: 16px;
+    top: 68px;
+  }
+
+  #login_usuario{
+    margin-top: 6.5%;
+    float: right;
+    clear: none;
+    position: fixed;
+    margin-left: 28%;
+    background: #CCC;
+    padding: 5px 15px;
+    border-radius: 1em;
+    border: 1px solid transparent;
+    font-family: Arial;
+    font-size: 115%;
+    font-weight: bold;
+    z-index: 2;
+}
+
+#cuerpo #nosotros #ubicacion-horario{
+  display:inline-block;
+  margin-top: 2%;
+  width: 100%;
+  margin-right: 0;
+}
+
+#cuerpo #nosotros #ubicacion{
+  width: 85%;
+  margin-left: 7.4%;
+}
+
+#cuerpo #nosotros iframe{
+  width: 100%;
+}
+
+#cuerpo #nosotros #horario{
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 10.2%;
+}
+
+#cuerpo #nosotros #tabla_nosotros{
+  margin-left: -1%;
+}
+
+
+#cuerpo #nosotros #tabla_nosotros th{
+  font-size: 20px;
+  padding: 15px;
+}
+
+#cuerpo #nosotros #tabla_nosotros td{
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+#pie, #footer{
+  margin-bottom: -30px;
+}
+
+#pie #footer-right{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+}
+
+
+/*------------------------------------------------*/
+@media (max-width: 1199px) {
+  #cabecera li a{
+    margin-top: 10px;
+  }
+  #cabecera #menuresponsive{
+    margin-top: 15.7px;
+  }
+}
+/*-------------------------------------------------/*
+/*------------------------------------------------*/
+@media (max-width: 991px) {
+  header .cart a img {
+    width: 30px;
+    margin-left: 10px;
+  }
+  header .cart a span.number {
+    left: 40px;
+    top: -7px;
+    font-size: 14px;
+  }
+  header {
+    padding: 10px 0px;
+  }
+  .cart-login {
+    position: absolute;
+    right: 3rem;
+  }
+  header .navbar-brand {
+    max-width: 150px;
+  }
+}
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+@media (max-width: 767px) {
+  .cart-login {
+    margin-right: 2.5rem;
+  }
+}
+/*-------------------------------------------------/*
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+@media (max-width:768px) {
+  .imagen_2{
+    margin-left: 90%;
+  }
+
+  .ventana{
+    right: 16px;
+    top: 68px;
+  }
+
+    #login_usuario{
+        margin-top: 10%;
+        float: right;
+        clear: none;
+        position: fixed;
+        margin-left: 20%;
+        background: #CCC;
+        padding: 5px 15px;
+        border-radius: 1em;
+        border: 1px solid transparent;
+        font-family: Arial;
+        font-size: 100%;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    #cuerpo #nosotros #ubicacion-horario{
+      display:inline-block;
+      margin-top: 2%;
+      width: 100%;
+      margin-right: 0;
+    }
+    
+    #cuerpo #nosotros #ubicacion{
+      width: 85%;
+      margin-left: 7.4%;
+    }
+  
+    #cuerpo #nosotros iframe{
+      width: 100%;
+    }
+    
+    #cuerpo #nosotros #horario{
+      width: 82.7%;
+      margin-top: 2%;
+      margin-left: 9%;
+    }
+    
+    #cuerpo #nosotros #tabla_nosotros{
+      margin-left: -1%;
+    }
+    
+    
+    #cuerpo #nosotros #tabla_nosotros th{
+      font-size: 15px;
+      padding: 15px;
+    }
+    
+    #cuerpo #nosotros #tabla_nosotros td{
+      font-size: 15px;
+      padding: 5px 15px;
+    }
+    
+    #cuerpo #nosotros #tabla_nosotros{
+      margin-left: -1%;
+      overflow: scroll;
+    }
+
+    #pie, #footer{
+      margin-bottom: -30px;
+    }
+
+    #pie #footer-right{
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 12.5px;
+    }
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+  .imagen_2{
+    margin-left: 90%;
+  }
+
+  .ventana{
+    right: 53px;
+    top: 68px;
+  }
+
+  #login_usuario{
+      margin-top: 13%;
+      float: right;
+      clear: none;
+      position: fixed;
+      margin-left: 12%;
+      background: #CCC;
+      padding: 5px 15px;
+      border-radius: 1em;
+      border: 1px solid transparent;
+      font-family: Arial;
+      font-size: 90%;
+      font-weight: bold;
+      z-index: 2;
+  }
+
+  #cuerpo #nosotros #ubicacion-horario{
+    display:inline-block;
+    margin-top: 2%;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  #cuerpo #nosotros #ubicacion{
+    width: 85%;
+    margin-left: 7.4%;
+  }
+
+  #cuerpo #nosotros iframe{
+    width: 100%;
+  }
+  
+  #cuerpo #nosotros #horario{
+    width: 82.7%;
+    margin-top: 2%;
+    margin-left: 9%;
+  }
+
+  #cuerpo #nosotros #tabla_nosotros th{
+    font-size: 15px;
+    padding: 15px;
+  }
+  
+  #cuerpo #nosotros #tabla_nosotros td{
+    font-size: 15px;
+    padding: 5px 15px;
+  }
+  
+  #cuerpo #nosotros #tabla_nosotros{
+    margin-left: -1%;
+    overflow: scroll;
+  }
+
+  #pie, #footer{
+    margin-bottom: -30px;
+  }
+
+  #pie #footer-right{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+
+  #pie #spacecolumna{
+    margin-left: 0.5px;
+  }
+}
+
+@media (max-width: 375px) {
+    .imagen_2{
+      margin-left: 90%;
+    }
+
+    .ventana{
+      right: 32px;
+      top: 68px;
+    }
+
+    #login_usuario{
+        margin-top: 33%;
+        float: right;
+        clear: none;
+        position: fixed;
+        margin-left: 0%;
+        background: #CCC;
+        padding: 0px 15px;
+        border-radius: 1em;
+        border: 1px solid transparent;
+        font-family: Arial;
+        font-size: 90%;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    #cuerpo #nosotros #ubicacion-horario{
+      display:inline-block;
+      margin-top: 2%;
+      width: 100%;
+      margin-right: 0;
+    }
+    
+    #cuerpo #nosotros #ubicacion{
+      width: 85%;
+      margin-left: 7.4%;
+    }
+  
+    #cuerpo #nosotros iframe{
+      width: 100%;
+    }
+    
+    #cuerpo #nosotros #horario{
+      width: 85%;
+      margin-top: 2%;
+      margin-left: 8%;
+    }
+
+    #cuerpo #nosotros #tabla_nosotros th{
+      font-size: 12px;
+      padding: 12px;
+    }
+    
+    #cuerpo #nosotros #tabla_nosotros td{
+      font-size: 12px;
+      padding: 5px 12px;
+    }
+    
+    #cuerpo #nosotros #tabla_nosotros{
+      margin-left: -1%;
+      overflow: scroll;
+    }
+
+    #pie, #footer{
+      margin-bottom: -30px;
+    }
+
+    #pie #footer-right{
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 10px;
+    }
+
+    #pie #spacecolumna{
+      margin-left: 0px;
+    }
+  }

@@ -1,0 +1,49 @@
+#cuerpo #contenedor_botones_pedidos{
+    display: inline-flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1%;
+    margin-left: 40%;
+    width: 28.1%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#cuerpo #contenedor_botones_pedidos .boton_pedido_cancelado a{
+    text-decoration: none;
+    color: #000;
+    background: rgb(255, 255, 255);
+    margin-left: -13.5px;
+    border-right: 2px solid black;
+    border-radius:  19px 0 0 19px;
+    padding: 21% 17% 22% 22%;
+}
+#cuerpo #contenedor_botones_pedidos .boton_pedido_cancelado .Selected{
+    color: rgb(104, 103, 103);
+    background: rgb(236, 236, 236);
+}
+
+#cuerpo #contenedor_botones_pedidos .boton_pedido a{
+    text-decoration: none;
+    color: #000;
+    border-right: 2px solid black;
+    margin-left: 30.6px;
+    padding: 15% 19% 16% 19%;
+}
+#cuerpo #contenedor_botones_pedidos .boton_pedido .Selected{
+    color: rgb(104, 103, 103);
+    background: rgb(236, 236, 236);
+}
+
+
+#cuerpo #contenedor_botones_pedidos .boton_pedido_completado a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 41.5px;
+    border-radius:  0 17px 17px 0;
+    padding: 11.5% 12% 12% 10%;
+}
+#cuerpo #contenedor_botones_pedidos .boton_pedido_completado .Selected{
+    color: rgb(104, 103, 103);
+    background: rgb(236, 236, 236);
+}

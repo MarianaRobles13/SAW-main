@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:arial;
+	text-align:center;
+}
+
+body{
+	top:50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	background: #FFF7F6;
+}
+
+.ub1{
+	margin-top: 10px;
+	float: left;
+	font-weight: bold;
+	margin-left: 2px;
+}
+
+#cuadro{
+	background: #FCDDD6;
+	width: 20em;
+	height: auto;
+	position: relative;
+	border-radius: 1em;
+	margin: auto;
+	padding: 2em;
+	color: black;
+	border: 1px solid black;
+}
+
+.sesion{
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.username{
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	float: left;
+}
+
+.password{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	float: left;
+}
+
+#iniciar{
+	margin-top: 20px;
+	padding: 1em 3em;
+	border-radius: 10px;
+	background: #FFF;
+	font-weight: bold;
+	color: black;
+	border: 1px solid black;
+}
+
+#usernametext{
+	width: 100%;
+	padding: 0.6em;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	text-align: left;
+	font-size: 1em;
+}
+
+#passwordtext{
+	width: 100%;
+	padding: 0.6em;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	text-align: left;
+	font-size: 1em;
+}

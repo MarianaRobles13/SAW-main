@@ -1,0 +1,121 @@
+#cuerpo #contacto{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: wrap;
+}
+
+#cuerpo #h1_contacto{
+    text-align: center;
+    margin-top: 1.5%;
+    font-weight: bold;
+    color: #B421B6;
+}
+
+#cuerpo #contacto .imagen_logo{
+    width: 90%;
+    text-align: center;
+    margin-left: 3%;
+    position: relative;
+}
+
+#cuerpo #contacto .imagen_logo img{
+    width: 450px;
+    height: 429px;
+    border: 10px solid #B421B6;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#cuerpo #contenedor_formu_contactar{
+    margin-left: 5%;
+    width: 90%;
+}
+
+#cuerpo #contacto #contenedor_formu_contactar p{
+    margin-top: 30px;
+    font-size: 18px;
+    width: 80%;
+}
+
+#cuerpo #formu_contactar{
+    max-width: 90%;
+}
+
+#cuerpo #contacto #formu_contactar .form-group{
+    width: 100%;
+}
+
+#cuerpo #contacto #formu_contactar .form-group label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+#cuerpo #contacto #formu_contactar .form-group input[type="text"],
+#cuerpo #contacto #formu_contactar .form-group input[type="number"]{
+    width: 90%;
+    margin-right: 2%;
+    border: 2px solid #ccc;
+}
+
+#cuerpo #contacto #formu_contactar .form-group input:focus{
+    border: 2px solid;
+    border-color: #B421B6;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+    outline: 0 none;
+}
+
+#cuerpo #contacto #formu_contactar .form-group textarea{
+    width: 90%;
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    text-align: justify;
+    padding: 1% 3% 0 3%;
+    line-height: 19px;
+    border: 0.5px solid #ccc;
+}
+
+#cuerpo #contacto #formu_contactar .form-group textarea:focus{
+    border: 2px solid;
+    border-color: #B421B6;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+    outline: 0 none;
+}
+
+#cuerpo #contacto #formu_contactar .boton_contactar{
+    text-align: end;
+    margin-right: 53px;
+}
+
+#cuerpo #contacto #formu_contactar .boton_contactar input[type="submit"]{
+    padding: 3px 15px;
+    border-radius: 5px;
+    background: #B421B6;
+    color: #fff;
+}
+
+#cuerpo #contacto #formu_contactar .boton_contactar input[type="submit"]:hover{
+    background: #fff;
+    color: #B421B6;
+}
+
+
+
+@media (max-width:950px){
+    #cuerpo #contacto .imagen_logo{
+        display: none;
+    }
+    #cuerpo #formu_contactar {
+        max-width: 70%;
+        margin-left: 18%;
+    }
+    #cuerpo #contenedor_formu_contactar {
+        width: 100%;
+        margin-left: 0px;
+    }
+    #cuerpo #contacto #contenedor_formu_contactar p {
+        margin-left: 18%;
+        width: 63%;
+    }
+}

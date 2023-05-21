@@ -1,0 +1,291 @@
+/*----------------- Ventana para registrarse -----------------*/
+#body {
+    border-radius: 1em;
+    border: 1px solid transparent;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CCC;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+#form{
+    background: #CCC;
+    padding: 10px 0;
+    border-radius: 1em;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+#form .grupo{
+    position: relative;
+    margin: 10px 5px 60px 0;
+    border-bottom: 1px solid transparent;
+}
+
+#form input[type="text"],
+#form input[type="number"],
+#form input[type="password"]{
+    background: #FFF;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px 50px 0px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0.5em;
+}
+
+#form input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+#form label{
+    color: #5e5d5d;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+#form input:focus~label,
+#form input:valid~label{
+    top: -17px;
+    font-size: 12px;
+    color: #000e5e;
+}
+
+#form .barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#form .barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    top: 35px;
+    position: absolute;
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+#form input:focus~.barra::before{
+    width: 100%;
+}
+
+#form input[type=submit]{
+    width: 80%;
+    margin: 10px 30px;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25%;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    background: #FFF;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+}
+
+#form input[type=submit]:hover{
+    box-shadow: 0 4px 16px rgb(112, 112, 112);
+    transition: all 0.2s ease;
+}
+
+/*------------------ Input Selector -----------------*/
+#form #seleccion select::-ms-expand {
+      display: none;
+}
+  
+#form #seleccion{
+    max-width: 350px;
+    position: relative;
+    width: 300px;
+}
+   
+#form #seleccion select{
+    display: inline-block;
+    width: 76%;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0; 
+    border: 0;
+    border-radius: 0;
+    background: #ffffff;
+    color: #7b7b7b;
+    font-size: 1em;
+    color: #999;
+    font-family: 'Quicksand', sans-serif;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+    margin-left: 24%;
+}
+   
+#form #seleccion select:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+#form #pregunta_2{
+    display: none;
+}
+
+#form #pregunta_3{
+    display: none;
+}
+
+#form #pregunta_4{
+    display: none;
+}
+
+#form #pregunta_5{
+    display: none;
+}
+
+#form #pregunta_6{
+    display: none;
+}
+
+#form #pregunta_7{
+    display: none;
+    margin-bottom: 8%;
+}
+
+#form #pregunta_8{
+    display: none;
+    margin-bottom: 8%;
+}
+
+#form #pregunta_9{
+    display: none;
+    margin-bottom: 8%;
+}
+
+#form #pregunta_10{
+    display: none;
+    margin-bottom: 8%;
+}
+
+#form #pregunta_11{
+    display: none;
+    margin-bottom: 8%;
+}
+
+#form #pregunta_12{
+    display: none;
+}
+
+#form #siguiente_2{
+    display: none;
+}
+
+#form #siguiente_3{
+    display: none;
+}
+#form #siguiente_4{
+    display: none;
+}
+
+#form #siguiente_5{
+    display: none;
+}
+
+#form #siguiente_6{
+    display: none;
+}
+
+
+#form #siguiente_7{
+    display: none;
+}
+
+#form #siguiente_8{
+    display: none;
+}
+
+#form #siguiente_9{
+    display: none;
+}
+
+#form #siguiente_10{
+    display: none;
+}
+
+#form #siguiente_11{
+    display: none;
+}
+
+#form #siguiente_12{
+    display: none;
+}
+
+#form .boton_mostrar{
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    background: #FFF;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+
+#form .boton_mostrar:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgb(112, 112, 112);
+    transition: all 0.2s ease;
+}
+
+#form a{
+    background-color: rgb(230, 21, 21);
+}
+
+#btn_regist{
+    display: none;
+}
+
+
+/*----------------- Ventana de Login -----------------*/
+#form input[type="password"]{
+    position: absolute;
+}
+
+#form input[type="checkbox"]{
+    float: left;
+    margin-top: 1.5%;
+}
+
+#form #show{
+    margin-left: 7%;
+    font-size: 15px;
+    width: 48%;
+}
+
+
+@media screen and (max-width:500px){
+    #form{
+        width: 80%;
+    }
+}
+
