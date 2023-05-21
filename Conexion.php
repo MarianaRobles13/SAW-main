@@ -1,7 +1,7 @@
 <?php
     $servidor="localhost";
     $usuario="root";
-    $password="Antony1201";
+    $password="lizbeth/MYSQL1/";
     $base="bdcupcake";
 
     $conexion=mysqli_connect("$servidor", "$usuario", "$password") or die();
