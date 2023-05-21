@@ -21,7 +21,7 @@
             $this->host = 'localhost';
             $this->db = 'bdcupcake';
             $this->usuario = 'root';
-            $this->password = 'Antony1201';
+            $this->password = 'lizbeth/MYSQL1/';
             $this->charset = 'utf8mb4';
         }
 
